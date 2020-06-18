@@ -1,10 +1,9 @@
-# Scene Localization for Matching UAV Images with Satellite Images
+# UAV Geolocalization Using Satellite Imagery
 
-This directory contains theory and experimental results on 
-geolocalization dataset. The objective is to find a well suited 
-method for matching UAV images with satellite images in order
-to predict the location of the UAV in a GPS-denied environment.
+| ![pair1](assets/pair1.gif) &nbsp;&nbsp; ![pair2](assets/pair2.gif) &nbsp;&nbsp;![pair3](assets/pair3.gif) |
+|:--:| 
+| *3 examples of matching UAV and satellite pairs from dataset* |
 
-The following two methods have been tested so far:
-1. SIFT based matching
-2. Image matching with Dual AlexNet structure
+* Download [*Aerial Cities* dataset](https://uofi.app.box.com/s/4jfvpmxwiob0hcg25z4lgd5qgnk0q8nb)
+* Pre-trained Models: [DualResNet18+](models/R00_all_cities_export) [SiamResNet18+](models/R00b_all_cities_export)
+* Training Notebooks: [DualResNet18+](R00_allcities_dualres.ipynb) [SiamResNet18+](R00b_allcities_siamres.ipynb)
