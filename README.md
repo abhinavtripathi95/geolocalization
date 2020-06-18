@@ -22,6 +22,18 @@ and gradual unfreezing
 * `torchvision==0.5.0`
 * `fastai` library (v1)
 
+## Installation
+* Using pip
+```bash
+$ pip install torch==1.4.0 torchvision==0.5.0
+$ pip install fastai
+```
+* Using conda
+```bash
+$ conda install pytorch==1.4.0 torchvision==0.5.0 -c pytorch
+$ conda install -c fastai fastai 
+```
+
 ## Downloads
 * Download [*Aerial Cities* dataset](https://uofi.app.box.com/s/4jfvpmxwiob0hcg25z4lgd5qgnk0q8nb)
 * Pre-trained Models: [DualResNet18+](https://github.com/abhinavtripathi95/geolocalization/raw/master/models/R00_allcities_export) [SiamResNet18+](https://github.com/abhinavtripathi95/geolocalization/raw/master/models/R00b_allcities_export)
