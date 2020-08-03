@@ -1,10 +1,17 @@
 # UAV Geolocalization Using Satellite Imagery
 
+![network](assets/dual-arch.png)
+
+Unmanned aerial vehicles or UAVs mostly rely on GPS data to precisely determine their global pose. However, data from GPS can sometimes be unreliable such as in case of loss of line-of-sight, presence of jammers, unfavourable weather conditions etc. In this work, we assume a GPS denied environment and match the images from UAV camera with the available satellite imagery. Such a technique can be utilized to estimate the global pose of the UAV in the absence of GPS. 
+
+For more details:
+* Read the [blog](https://abhinavtripathi95.github.io/lets-talk/technical/2020/08/03/uav-geolocalization.html)
+* Download the [report](https://github.com/abhinavtripathi95/geolocalization/raw/master/assets/thesis.pdf)
+
+## Dataset
 | ![pair1](assets/pair1.gif) &nbsp;&nbsp; ![pair2](assets/pair2.gif) &nbsp;&nbsp;![pair3](assets/pair3.gif) |
 |:--:| 
 | *3 examples of matching UAV and satellite pairs from dataset* |
-
-## Dataset
 As it can be seen from the above images, the UAV and satellite images 
 differ considerably from each other. We train a dual network on this 
 dataset to recognize whether a pair of images are from same scene or not.
@@ -21,8 +28,10 @@ and gradual unfreezing
 * `torch==1.4.0`
 * `torchvision==0.5.0`
 * `fastai` library (v1)
+* NOTE on fastai: This code was written using fastai v1, which may soon be moved to `fastai/fastai1`. In this case, installation instructions below will not work. 
 
 ## Installation
+
 * Using pip
 ```bash
 $ pip install torch==1.4.0 torchvision==0.5.0
@@ -32,6 +41,12 @@ $ pip install fastai
 ```bash
 $ conda install pytorch==1.4.0 torchvision==0.5.0 -c pytorch
 $ conda install -c fastai fastai 
+```
+* Check version in python
+```python
+>>> import fastai
+>>> fastai.__version__
+'1.0.61'
 ```
 
 ## Downloads
