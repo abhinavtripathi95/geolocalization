@@ -12,6 +12,7 @@ For more details:
 | ![pair1](assets/pair1.gif) &nbsp;&nbsp; ![pair2](assets/pair2.gif) &nbsp;&nbsp;![pair3](assets/pair3.gif) |
 |:--:| 
 | *3 examples of matching UAV and satellite pairs from dataset* |
+
 As it can be seen from the above images, the UAV and satellite images 
 differ considerably from each other. We train a dual network on this 
 dataset to recognize whether a pair of images are from same scene or not.
